@@ -25,6 +25,6 @@ const Container = styled.div`
 		margin-top: 10px;
 		margin-left: 20px;
 		margin-right: 20px;
-		margin-bottom: 140px;
+		margin-bottom: 110px;
 	}
 `;
