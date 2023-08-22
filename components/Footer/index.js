@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Info() {
+export default function Footer() {
 	return (
 		<>
 			<InfoContainer>
@@ -26,13 +26,14 @@ const InfoContainer = styled.div`
 	font-size: 13px;
 	font-family: "CaviarDreams", sans-serif;
 	margin-bottom: 0px;
-	padding-top: 12px;
+	padding-bottom: 20px;
+	padding-top: 10px;
 	background-color: #7e9ba5;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 120px;
+	height: 130px;
 `;
 const InfoLine = styled.p`
 	display: flex;
@@ -45,7 +46,7 @@ const Label = styled.span`
 	font-family: "CaviarDreams", sans-serif;
 	margin-right: 10px;
 	color: white;
-	min-width: 80px;
+	min-width: 60px;
 `;
 
 const InfoText = styled.span`
