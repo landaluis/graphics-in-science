@@ -6,16 +6,8 @@ export default function Footer() {
 		<>
 			<InfoContainer>
 				<InfoLine>
-					<Label>Address</Label>
-					<InfoText>Scharnhorststrasse 146, Bremen</InfoText>
-				</InfoLine>
-				<InfoLine>
-					<Label>Phone</Label>
-					<InfoText>+49 152 59062141</InfoText>
-				</InfoLine>
-				<InfoLine>
 					<Label>Email</Label>
-					<InfoText>andres@graphicsinscience.com</InfoText>
+					<InfoText>andresalegria@live.com</InfoText>
 				</InfoLine>
 			</InfoContainer>
 		</>
@@ -23,17 +15,17 @@ export default function Footer() {
 }
 
 const InfoContainer = styled.div`
-	font-size: 13px;
+	font-size: 16px;
 	font-family: "CaviarDreams", sans-serif;
 	margin-bottom: 0px;
 	padding-bottom: 20px;
-	padding-top: 10px;
+	padding-top: 20px;
 	background-color: #7e9ba5;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 130px;
+	height: 80px;
 `;
 const InfoLine = styled.p`
 	display: flex;

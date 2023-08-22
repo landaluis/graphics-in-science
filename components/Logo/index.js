@@ -22,10 +22,11 @@ const LogoContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	position: absolute;
-	top: 43%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	margin-right: 60px;
+
+	@media (max-width: 768px) {
+		margin-right: 0px;
+	}
 `;
 
 const Triangle = styled.div`

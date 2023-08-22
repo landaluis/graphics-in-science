@@ -1,13 +1,12 @@
 import Header from "@/components/Header";
-import Logo from "@/components/Logo";
-import Info from "@/components/Footer";
 import Footer from "@/components/Footer";
+import ContainerComponent from "@/components/ContainerComponent";
 
 export default function Home() {
 	return (
 		<main>
 			<Header />
-			<Logo />
+			<ContainerComponent />
 			<Footer />
 		</main>
 	);

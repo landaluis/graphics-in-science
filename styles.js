@@ -2,6 +2,15 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 
+
+@font-face {
+  font-family:'AvertaDemo-Regular';
+  src: url('/AvertaDemo-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family:'CaviarDreams';
   src: url('/CaviarDreams.ttf') format('truetype');
