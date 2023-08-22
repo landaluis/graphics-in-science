@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function Header() {
 	return (
 		<HeaderContainer>
-			<Name>Andrés Alegria</Name>
+			<Name>Andrés Alegría</Name>
 			<Title>Graphics Specialist</Title>
 		</HeaderContainer>
 	);
