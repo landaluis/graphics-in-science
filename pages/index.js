@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import Header from "@/components/Header";
+import Logo from "@/components/Logo";
+import Info from "@/components/Info";
 
 export default function Home() {
-  return (
-    <main>
-      <Heading>🐋Capstone Whales Template🐋</Heading>
-    </main>
-  );
+	return (
+		<main>
+			<Header />
+			<Logo />
+			<Info />
+		</main>
+	);
 }
-
-const Heading = styled.h1`
-text-align: center;
-`;
