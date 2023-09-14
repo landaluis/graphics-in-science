@@ -1,33 +1,57 @@
 import React from "react";
 import styled from "styled-components";
+import LogoN from "../LogoN";
+import RightNavBar from "../RightNavBar";
+import BurgerMenu from "../BurgerMenu";
 
 export default function Header() {
 	return (
 		<HeaderContainer>
-			<Name>Andrés Alegría</Name>
-			<Title>Graphics Specialist</Title>
+			<NavContainer>
+				<LogoN />
+				<NavSectionContainer>
+					<BurgerMenu />
+					<RightNavBar />
+				</NavSectionContainer>
+			</NavContainer>
 		</HeaderContainer>
 	);
 }
 
 const HeaderContainer = styled.div`
-	background-color: White;
-	color: #7e9ba5;
-	padding: 20px;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	border-bottom: 1px solid #7e9ba5;
-`;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	background-color: white;
+	border: 1px solid red;
+	padding: 1.5rem 3rem 1.2rem;
+	position: sticky;
+	top: 0;
+	background-color: #efeeec;
 
-const Name = styled.h1`
-	margin: 0;
-	font-size: 29px;
-	font-family: "CaviarDreams_Bold", sans-serif;
+	@media (max-width: 768px) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
 `;
+const NavContainer = styled.div`
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	// width: calc(100vw - 6rem);
+`;
+const NavSectionContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	// width: auto;
+	// margin-right: 11.8rem;
 
-const Title = styled.h2`
-	margin: 0;
-	font-size: 12px;
-	font-family: "Poppins-Regular", sans-serif;
+	@media (max-width: 768px) {
+		// width: 350px;
+	}
 `;
