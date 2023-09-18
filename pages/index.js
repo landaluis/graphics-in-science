@@ -1,12 +1,12 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ContainerComponent from "@/components/ContainerComponent";
+import PageWrap from "@/components/PageWrap";
 
 export default function Home() {
 	return (
 		<main>
 			<Header />
-			<ContainerComponent />
+			<PageWrap />
 			<Footer />
 		</main>
 	);

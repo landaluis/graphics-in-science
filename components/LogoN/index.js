@@ -22,7 +22,7 @@ export default function LogoN() {
 const LogoContainer = styled.div`
 	// padding-left: 4.5rem;
 	@media (max-width: 768px) {
-		width: 100%;
+		// width: 100%;
 		margin: 0px;
 		padding: 0px;
 	}
