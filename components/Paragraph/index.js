@@ -70,14 +70,13 @@ const ParagraphTitle = styled.h1`
 
 const ParagraphContainer = styled.div`
 	color: #303538;
-	// width: calc(((100% - 16.5rem) / 12) * 5 + 6rem);
+
 	width: 40%;
-	// padding: 20px;
+
 	font-family: "AvertaDemo-Regular", sans-serif;
 	font-size: 1rem;
 	line-height: 27px;
 	grid-row-gap: 2rem;
-	// text-align: justify;
 
 	@media (max-width: 768px) {
 		width: 100%;

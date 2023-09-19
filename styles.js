@@ -43,6 +43,7 @@ export default createGlobalStyle`
     margin: 0;
     font-family: system-ui;
     background-color: #efeeec;
+    height: 3000px;
 
   }
 `;

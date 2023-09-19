@@ -24,7 +24,6 @@ const HeaderContainer = styled.div`
 	justify-content: space-between;
 	width: 100%;
 	background-color: white;
-	border: 1px solid red;
 	padding: 1.5rem 3rem 1.2rem;
 	position: sticky;
 	top: 0;
@@ -42,16 +41,9 @@ const NavContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	// width: calc(100vw - 6rem);
 `;
 const NavSectionContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	// width: auto;
-	// margin-right: 11.8rem;
-
-	@media (max-width: 768px) {
-		// width: 350px;
-	}
 `;

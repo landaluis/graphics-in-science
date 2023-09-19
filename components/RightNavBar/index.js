@@ -16,7 +16,5 @@ export default function RightNavBar() {
 const RightNavBarContainer = styled.div`
 display: flex;
 align-items: center;
-// margin-right: 180px;
-// grid-column-gap: 3rem;
 }
 `;
