@@ -41,7 +41,9 @@ const LinkedInTwitterContainer = styled.div`
 
 const LetsWorkLinkContainer = styled.div`
 	margin-top: 3rem;
+	z-index: -1;
 	@media (max-width: 768px) {
+		z-index: -1;
 		margin-top: 1.5rem;
 		margin-bottom: 3rem;
 	}
@@ -68,8 +70,8 @@ const ParagraphTitle = styled.h1`
 
 const ParagraphContainer = styled.div`
 	color: #303538;
-	width: calc(((100% - 16.5rem) / 12) * 5 + 6rem);
-	// width: 40%;
+	// width: calc(((100% - 16.5rem) / 12) * 5 + 6rem);
+	width: 40%;
 	// padding: 20px;
 	font-family: "AvertaDemo-Regular", sans-serif;
 	font-size: 1rem;

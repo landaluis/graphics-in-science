@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "../Logo";
 import Paragraph from "../Paragraph";
+import Globe from "../Globe";
 
 export default function PageWrap() {
 	return (
@@ -9,18 +10,39 @@ export default function PageWrap() {
 			<ParagraphSphereSection>
 				<Paragraph />
 				{/* <SquareParagraph /> */}
-
-				<Logo />
+				{/* <Logo /> */}
+				{/* <GlobeContainer> */}
+				<Globe />
+				{/* </GlobeContainer> */}
 			</ParagraphSphereSection>
 		</PageWrapContainer>
 	);
 }
+
+// const GlobeContainer = styled.div`
+// width: 100%;
+// height: 100vh;
+
+// @media (max-width: 768px) {
+// 	.container {
+// 	  width: 80%;
+// 	  height: 80vh;
+
+// 	}
+// 	@media (max-width: 480px) {
+// 		.container {
+// 		  width: 80%;
+// 		  height: 60vh;
+// 		}
+
+// `;
 
 const ParagraphSphereSection = styled.div`
 	padding: 4rem;
 	padding: 1.5rem 3rem 1.2rem;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
 	@media (max-width: 768px) {
 		padding: 1rem 1rem 1rem;
@@ -29,11 +51,12 @@ const ParagraphSphereSection = styled.div`
 `;
 
 const PageWrapContainer = styled.div`
+	overflow: hidden;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	// align-items: flex-start;
-	margin-top: 60px;
+	align-items: center;
+	// margin-top: 60px;
 
 	@media (max-width: 768px) {
 		flex-direction: column;
