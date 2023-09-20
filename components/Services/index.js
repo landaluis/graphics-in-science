@@ -108,7 +108,8 @@ const ServicesContainer = styled.div`
 	padding: 1.5rem 15rem 1.5rem;
 	line-height: 2rem;
 	font-size: 1.2rem;
-	width: calc(100% - 6rem);
+	margin-bottom: 3rem;
+	// width: calc(100% - 6rem);
 	// width: calc(((100% - 16.5rem) / 12) * 6 + 7.5rem);
 
 	@media (max-width: 768px) {

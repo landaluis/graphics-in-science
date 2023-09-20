@@ -19,6 +19,7 @@ export default function Header() {
 }
 
 const HeaderContainer = styled.div`
+	z-index: 50;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
