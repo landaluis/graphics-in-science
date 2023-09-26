@@ -1,15 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import LearnMoreLink from "../LearnMoreLink";
-import Paragraph from "../Paragraph";
 
-export default function CardExample({
-	imageUrl,
-	imageUrl2,
-	title,
-	text,
-	learnMoreLink,
-}) {
+export default function CardExample({ imageUrl, imageUrl2, title, text }) {
 	return (
 		<>
 			<CardContainer>
@@ -59,28 +52,21 @@ const RightSectionCard = styled.div`
 `;
 
 const Text = styled.p`
-	font-family: "AvertaDemo-Regular", sans-serif;
+	font-family: "Arial", sans-serif;
 	font-size: 0.7rem;
-	color: black;
+	color: var(--black01);
 `;
 
 const Title = styled.h3`
-	color: black;
+	color: var(--black01);
 	font-family: Times Roman Regular;
-	// font-size: 18px;
 	margin: 10px 0;
 	display: flex;
 `;
-// const Image = styled.img`
-// 	max-width: 100%;
-// 	height: auto;
-// `;
+
 const LeftSectionCard = styled.div`
 	flex: 1;
-	padding-right: 0;
-	padding-bottom: 0;
-	padding-left: 0;
-	padding: 1rem;
+	padding: 1rem 0;
 `;
 
 const CardSectionContainer = styled.div`
@@ -92,9 +78,8 @@ const CardSectionContainer = styled.div`
 
 const CardContainer = styled.div`
 	transform: scale(1);
-	margin: 0rem 6rem 0rem;
+	margin: 0 6rem 0;
 	position: sticky;
-	transform-origin: 50% 0;
 	font-family: Noto Sans Display, sans-serif;
 	font-size: 1.25rem;
 	line-height: 1.45;
@@ -103,9 +88,6 @@ const CardContainer = styled.div`
 const Card = styled.div`
 	border-style: solid;
 	border-width: 3px;
-	color: #687377;
-	padding-right: 2rem;
-	padding-left: 2rem;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	color: var(--black01);
+	padding: 1.5rem 2rem;
 `;

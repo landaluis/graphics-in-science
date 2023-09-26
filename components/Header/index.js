@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import LogoN from "../LogoN";
+import Logo from "../Logo";
 import RightNavBar from "../RightNavBar";
 import BurgerMenu from "../BurgerMenu";
 
@@ -8,7 +8,7 @@ export default function Header() {
 	return (
 		<HeaderContainer>
 			<NavContainer>
-				<LogoN />
+				<Logo />
 				<NavSectionContainer>
 					<BurgerMenu />
 					<RightNavBar />
@@ -28,13 +28,10 @@ const HeaderContainer = styled.div`
 	padding: 1.5rem 3rem 1.2rem;
 	position: sticky;
 	top: 0;
-	background-color: #efeeec;
+	background-color: var(--background-white);
 
 	@media (max-width: 768px) {
-		padding-left: 1rem;
-		padding-right: 1rem;
-		padding-top: 1rem;
-		padding-bottom: 1rem;
+		padding: 1rem;
 	}
 `;
 const NavContainer = styled.div`

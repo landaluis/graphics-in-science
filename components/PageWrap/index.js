@@ -82,10 +82,7 @@ const PageWrapContainer = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	// padding-top: 6rem;
-	padding-bottom: 4rem;
-	padding-right: 3rem;
-	padding-left: 3rem;
+	padding: 0 3rem 4rem;
 
 	@media (max-width: 768px) {
 		flex-direction: column;

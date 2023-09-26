@@ -28,6 +28,14 @@ export default function Services() {
 	);
 }
 
+const blueColor = "var(--blueContact-us)";
+
+const DecorationDiv = styled.div`
+	background-color: ${blueColor};
+	flex: none;
+	display: block;
+`;
+
 const DecorationContainer1 = styled.div`
 	justify-content: center;
 	position: absolute;
@@ -38,30 +46,21 @@ const DecorationContainer1 = styled.div`
 	align-items: center;
 	display: flex;
 `;
-const DecorationDiv1 = styled.div`
-	background-color: #25363d;
-	flex: none;
+const DecorationDiv1 = styled(DecorationDiv)`
 	width: 0.75rem;
 	height: 0.75rem;
-	display: block;
 `;
-const DecorationDiv2 = styled.div`
+const DecorationDiv2 = styled(DecorationDiv)`
 	width: 8rem;
-	background-color: #25363d;
 	position: absolute;
 	height: 1px;
-	flex: none;
 	right: 0;
-	display: block;
 `;
-const DecorationDiv3 = styled.div`
+const DecorationDiv3 = styled(DecorationDiv)`
 	width: 1px;
-	background-color: #25363d;
 	position: absolute;
 	height: 6rem;
-	flex: none;
 	top: 0;
-	display: block;
 `;
 const DecorationContainer2 = styled.div`
 	justify-content: center;
@@ -73,30 +72,21 @@ const DecorationContainer2 = styled.div`
 	align-items: center;
 	display: flex;
 `;
-const DecorationDiv4 = styled.div`
-	background-color: #25363d;
-	flex: none;
+const DecorationDiv4 = styled(DecorationDiv)`
 	width: 0.75rem;
 	height: 0.75rem;
-	display: block;
 `;
-const DecorationDiv5 = styled.div`
+const DecorationDiv5 = styled(DecorationDiv)`
 	width: 8rem;
-	background-color: #25363d;
 	position: absolute;
 	height: 1px;
-	flex: none;
 	right: 0;
-	display: block;
 `;
-const DecorationDiv6 = styled.div`
+const DecorationDiv6 = styled(DecorationDiv)`
 	width: 1px;
-	background-color: #25363d;
 	position: absolute;
 	height: 6rem;
-	flex: none;
 	bottom: 0;
-	display: block;
 `;
 
 const ServicesContainer = styled.div`
@@ -113,10 +103,7 @@ const ServicesContainer = styled.div`
 	// width: calc(((100% - 16.5rem) / 12) * 6 + 7.5rem);
 
 	@media (max-width: 768px) {
-		padding-left: 1rem;
-		padding-right: 1rem;
-		padding-top: 1rem;
-		padding-bottom: 1rem;
+		padding: 1rem;
 	}
 `;
 
@@ -127,5 +114,5 @@ const TitleServices = styled.h2`
 `;
 
 const ParagraphServices = styled.p`
-	font-family: "AvertaDemo-Regular", sans-serif;
+	font-family: "Arial", sans-serif;
 `;

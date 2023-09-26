@@ -50,7 +50,6 @@ export default function Globe() {
 		}
 
 		animate();
-		console.log("Aqui estoy una vez");
 	}, []);
 
 	return <Container ref={containerRef} />;

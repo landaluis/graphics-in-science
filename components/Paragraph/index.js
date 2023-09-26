@@ -42,6 +42,7 @@ const LinkedInTwitterContainer = styled.div`
 const LetsWorkLinkContainer = styled.div`
 	margin-top: 3rem;
 	z-index: -1;
+
 	@media (max-width: 768px) {
 		z-index: -1;
 		margin-top: 1.5rem;
@@ -52,28 +53,25 @@ const Content = styled.div`
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
-}
 `;
 
 const ParagraphText = styled.p`
-	margin-top: 0;
-	font-size: 0.9rem;
-	margin-bottom: 0;
-	margin-right: 2rem;
+	margin: 0 2rem 0 0;
+	font-family: "Arial";
+	font-size: 1rem;
 	line-height: 1.2rem;
 `;
 const ParagraphTitle = styled.h1`
-	font-size: 2.25rem;
-	font-family: Times Roman Regular;
-	line-height: 2.6rem;
+	font-family: "Times New Roman", serif;
+	font-size: 3.25rem;
+	font-weight: lighter;
+	line-height: 3.6rem;
 `;
 
 const ParagraphContainer = styled.div`
-	color: #303538;
-
+	color: var(--black01);
 	width: 40%;
-
-	font-family: "AvertaDemo-Regular", sans-serif;
+	font-family: "Arial", sans-serif;
 	font-size: 1rem;
 	line-height: 27px;
 	grid-row-gap: 2rem;

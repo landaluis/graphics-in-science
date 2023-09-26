@@ -18,9 +18,7 @@ export default function ExamplesLink() {
 }
 
 const ExamplesLinkContainer = styled.div`
-	font-family: "AvertaDemo-Regular", sans-serif;
-	padding: 8px 10px;
+	font-family: "Arial", sans-serif;
 	font-size: 1.1rem;
-	text-decoration: none;
-	color: black;
+	padding: 8px 10px;
 `;

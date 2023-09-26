@@ -31,21 +31,20 @@ export default function MyStory() {
 const MyStoryIntroContainer = styled.div`
 	grid-column-gap: 2rem;
 	grid-row-gap: 2rem;
+	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
-	display: flex;
 `;
 const MyStoryLinkContainer = styled.div`
-	font-family: "AvertaDemo-Regular", sans-serif;
-	// color: #fafafa;
-	background-color: #25363d;
+	font-family: "Arial", sans-serif;
+	font-size: 1rem;
+	background-color: var(--blueContact-us);
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	display: flex;
 	margin-left: 10%;
 	position: relative;
 	padding: 0.8rem 1.175rem;
-	font-size: 1rem;
 `;
 
 const MyStoryIntroText = styled.p`
@@ -54,6 +53,6 @@ const MyStoryIntroText = styled.p`
 	font-family: Times Roman Regular;
 	font-size: 1.9rem;
 	line-height: 1.3;
-	padding: 0 4rem 0;
 	text-align: center;
+	padding: 0 4rem 0;
 `;

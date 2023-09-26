@@ -20,13 +20,13 @@ export default function MoreExamples() {
 }
 
 const MoreExamplesContainer = styled.div`
-	position: relative;
 	display: flex;
+	position: relative;
 	justify-content: center;
 	align-items: center;
 	padding: 0.8rem 1.175rem;
 	font-size: 1rem;
-	font-color: white;
-	background-color: #25363d;
-	font-family: "AvertaDemo-Regular", sans-serif;
+	font-color: var(--background-white);
+	background-color: var(--blueContact-us);
+	font-family: "Arial", sans-serif;
 `;

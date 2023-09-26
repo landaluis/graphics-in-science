@@ -27,12 +27,12 @@ export default function Contact() {
 }
 
 const SeparationDown = styled.div`
-	background-color: black;
+	background-color: var(--black01);
 	width: 100%;
 	height: 2.5px;
 `;
 const SeparationUp = styled.div`
-	background-color: #959c9e;
+	background-color: var(--separation-line);
 	width: 100%;
 	height: 1px;
 `;
@@ -40,33 +40,25 @@ const SeparationUp = styled.div`
 const LinksSection = styled.div`
 	display: flex;
 	flex-wrap: wrap;
-	color: #efeeec;
-	color: #efeeec;
 `;
 
-const EmailSection = styled.div`
-	color: #acb1b2;
-`;
+const EmailSection = styled.div``;
 
 const RightSectionContact = styled.div`
-	color: #0e2129;
-	background-color: #25363d;
-	font-family: "AvertaDemo-Regular", sans-serif;
+	font-family: "Arial", sans-serif;
 	font-size: 1.25rem;
 	line-height: 1.45;
-	flex-direction: column;
 	display: flex;
+	flex-direction: column;
 	grid-column-gap: 1.5rem;
 	grid-row-gap: 1.5rem;
 `;
 
 const LeftSectionContact = styled.div`
-	color: #efeeec;
 	margin-top: 0;
 	margin-bottom: 0;
-	font-family: Times Roman Regular;
+	font-family: "Times New Roman", serif;
 	font-size: 2.5rem;
-	font-weight: 700;
 	line-height: 1.25;
 `;
 
@@ -79,14 +71,11 @@ const ContactInfo = styled.div`
 
 const ContactWrapper = styled.div`
 	width: 100%;
-	// margin-left: auto;
-	// margin-right: auto;
 	padding: 5rem;
 	position: relative;
-	color: #0e2129;
-	background-color: #25363d;
+	background-color: var(--blueContact-us);
+	color: var(--background-white);
 	font-family: Times Roman Regular;
 	font-size: 1.25rem;
 	line-height: 1.45;
-	font-family: Times Roman Regular;
 `;

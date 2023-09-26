@@ -9,7 +9,7 @@ export default function AboutLink() {
 				href={"/about"}
 				style={{
 					textDecoration: "none",
-					color: "black",
+					color: "#10212A",
 				}}>
 				About
 			</Link>
@@ -18,10 +18,7 @@ export default function AboutLink() {
 }
 
 const AboutLinkContainer = styled.div`
-	font-family: "AvertaDemo-Regular", sans-serif;
 	padding: 8px 10px;
+	font-family: "Arial", sans-serif;
 	font-size: 1.1rem;
-	font-weight: 500;
-	text-decoration: none;
-	color: black;
 `;

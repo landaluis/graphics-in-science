@@ -17,6 +17,7 @@ export default function AboutExampleNav() {
 const NavContainer = styled.div`
 	display: flex;
 	align-items: center;
+
 	@media (max-width: 768px) {
 		display: none;
 	}

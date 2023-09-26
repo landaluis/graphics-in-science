@@ -52,8 +52,7 @@ export default function BurgerMenu() {
 }
 
 const LinksPadding = styled.div`
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding: 1rem 0;
 	display: block;
 `;
 const BurgerButton = styled.button`
@@ -73,21 +72,16 @@ const BurgerButton = styled.button`
 `;
 
 const SquareMenu = styled.div`
-	background-color: #fafafa;
-	border-style: solid;
+	background-color: var(--background-white);
 	border-width: 2px;
-	flex-direction: column;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
 	text-align: center;
 	z-index: 26;
 	position: absolute;
+	padding: 1rem 1.5rem;
 	top: 100%;
 	left: 3rem;
 	right: 3rem;

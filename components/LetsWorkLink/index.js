@@ -18,10 +18,10 @@ export default function LetsWorkLink() {
 }
 
 const LetsContainer = styled.div`
-	font-family: "AvertaDemo-Regular", sans-serif;
+	font-family: "Arial";
 	min-width: 10.5rem;
-	color: #0e2129;
-	background-color: #fc0;
+	color: var(--black01);
+	background-color: var(--yellow01);
 	justify-content: center;
 	align-items: center;
 	padding: 1rem 0.7rem;

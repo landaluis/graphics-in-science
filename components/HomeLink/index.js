@@ -9,7 +9,7 @@ export default function HomeLink() {
 				href={"/"}
 				style={{
 					textDecoration: "none",
-					color: "black",
+					color: "#10212A",
 				}}>
 				Home
 			</Link>
@@ -18,10 +18,7 @@ export default function HomeLink() {
 }
 
 const HomeLinkContainer = styled.div`
-	font-family: "AvertaDemo-Regular", sans-serif;
+	font-family: "Arial", sans-serif;
 	padding: 8px 10px;
 	font-size: 1.1rem;
-	font-weight: 500;
-	text-decoration: none;
-	color: black;
 `;
