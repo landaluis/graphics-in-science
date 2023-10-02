@@ -42,7 +42,7 @@ const LinkedInBehanceContainer = styled.div`
 	}
 	@media (max-width: 768px) {
 		margin-top: 1.5rem;
-		margin-bottom: 0.5rem;
+		margin-bottom: 2.5rem;
 	}
 	@media (max-width: 402px) {
 		grid-column-gap: 1.5rem;
@@ -89,7 +89,7 @@ const ParagraphText = styled.p`
 const ParagraphTitle = styled.h1`
 	font-family: "Times New Roman", serif;
 	font-size: 3.25rem;
-	font-weight: lighter;
+	font-weight: bold;
 	line-height: 3.6rem;
 
 	@media (max-width: 1280px) {
