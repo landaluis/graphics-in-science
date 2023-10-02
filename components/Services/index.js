@@ -45,6 +45,10 @@ const DecorationContainer1 = styled.div`
 	top: 0;
 	align-items: center;
 	display: flex;
+
+	@media (max-width: 402px) {
+		display: none;
+	}
 `;
 const DecorationDiv1 = styled(DecorationDiv)`
 	width: 0.75rem;
@@ -71,6 +75,9 @@ const DecorationContainer2 = styled.div`
 	bottom: 0;
 	align-items: center;
 	display: flex;
+	@media (max-width: 402px) {
+		display: none;
+	}
 `;
 const DecorationDiv4 = styled(DecorationDiv)`
 	width: 0.75rem;
@@ -90,29 +97,70 @@ const DecorationDiv6 = styled(DecorationDiv)`
 `;
 
 const ServicesContainer = styled.div`
+	width: 90%;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	padding: 1.5rem 15rem 1.5rem;
-	line-height: 2rem;
+	padding: 4rem 15rem 4rem;
+	color: var(--black01);
 	font-size: 1.2rem;
-	margin-bottom: 3rem;
-	// width: calc(100% - 6rem);
-	// width: calc(((100% - 16.5rem) / 12) * 6 + 7.5rem);
+	margin-bottom: 6rem;
+
+	@media (max-width: 1350px) {
+		padding: 3.5rem 13rem 3.5rem;
+	}
+
+	@media (max-width: 1280px) {
+		padding: 2rem 12rem 2rem;
+	}
+	@media (max-width: 1182px) {
+		padding: 2rem 9rem 2rem;
+		font-size: 1.1rem;
+	}
+	@media (max-width: 1024px) {
+		padding: 2rem 8rem 2rem;
+	}
+
+	@media (max-width: 980px) {
+		padding: 2rem 4rem 2rem;
+	}
 
 	@media (max-width: 768px) {
-		padding: 1rem;
+		padding: 2rem 2rem 2rem 2rem;
+		font-size: 1rem;
+	}
+
+	@media (max-width: 402px) {
+		width: 95%;
+		padding: 0.5rem 2rem 0.5rem 1rem;
+		font-size: 1rem;
+		line-height: 1rem;
+		margin-bottom: 0;
 	}
 `;
 
 const TitleServices = styled.h2`
-	font-family: Times Roman Regular;
+	font-family: "Times Roman Regular", serif;
+	font-weight: lighter;
 	font-size: 2.5rem;
 	margin-bottom: 10px;
+
+	@media (max-width: 1024px) {
+		font-size: 2.3rem;
+	}
+
+	@media (max-width: 768px) {
+		margin-top: 10px;
+	}
 `;
 
 const ParagraphServices = styled.p`
 	font-family: "Arial", sans-serif;
+	line-height: 1.8rem;
+
+	@media (max-width: 768px) {
+		line-height: 1.6rem;
+	}
 `;

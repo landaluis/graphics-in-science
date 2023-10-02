@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 export default function Globe() {
 	const containerRef = useRef(null);
+	const canvasRef = useRef(null);
 
 	useEffect(() => {
 		const scene = new THREE.Scene();
@@ -15,7 +16,8 @@ export default function Globe() {
 			antialias: true,
 		});
 
-		containerRef.current.appendChild(renderer.domElement);
+		canvasRef.current = renderer.domElement;
+		containerRef.current.appendChild(canvasRef.current);
 
 		function updateSize() {
 			const container = containerRef.current;
@@ -25,9 +27,11 @@ export default function Globe() {
 			camera.updateProjectionMatrix();
 
 			renderer.setSize(container.clientWidth, container.clientHeight);
+			renderer.render(scene, camera);
 		}
 
 		updateSize();
+
 		window.addEventListener("resize", updateSize);
 
 		const sphere = new THREE.Mesh(
@@ -39,39 +43,49 @@ export default function Globe() {
 
 		scene.add(sphere);
 
-		camera.position.z = 8.5;
-
 		function animate() {
 			requestAnimationFrame(animate);
 
+			camera.position.z = 8.5;
 			sphere.rotation.y += 0.001;
 
 			renderer.render(scene, camera);
 		}
 
 		animate();
+
+		return () => {
+			window.removeEventListener("resize", updateSize);
+		};
 	}, []);
 
 	return <Container ref={containerRef} />;
 }
 
 const Container = styled.div`
+	// border: 1px solid red;
+	position: relative;
 	overflow: hidden;
-	width: 60%;
+	width: 55%;
 	height: 60vh;
 
-	@media (max-width: 890px) {
-		width: 45%;
-		height: 45vh;
+	@media (max-width: 1350px) {
+		width: 50%;
 	}
 
-	@media (max-width: 768px) {
-		width: 100%;
-		height: 60vh;
-	}
-
-	@media (max-width: 480px) {
+	@media (max-width: 1300px) {
 		width: 60%;
-		height: auto;
+	}
+
+	@media (max-width: 820px) {
+		width: 100%;
+	}
+	@media (max-width: 1150px) {
+	}
+
+	@media (max-width: 1024px) {
+	}
+
+	@media (max-width: 402px) {
 	}
 `;

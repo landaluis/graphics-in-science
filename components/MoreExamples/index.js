@@ -10,7 +10,7 @@ export default function MoreExamples() {
 					href={"/about"}
 					style={{
 						textDecoration: "none",
-						color: "white",
+						color: "#D9DAD9",
 					}}>
 					More Examples
 				</Link>
@@ -25,8 +25,13 @@ const MoreExamplesContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding: 0.8rem 1.175rem;
-	font-size: 1rem;
-	font-color: var(--background-white);
-	background-color: var(--blueContact-us);
+	margin: 2rem;
 	font-family: "Arial", sans-serif;
+	font-size: 0.9rem;
+
+	background-color: var(--blueContact-us);
+
+	@media (max-width: 402px) {
+		margin: 1rem;
+	}
 `;

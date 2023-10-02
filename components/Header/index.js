@@ -30,15 +30,25 @@ const HeaderContainer = styled.div`
 	top: 0;
 	background-color: var(--background-white);
 
+	@media (max-width: 1024px) {
+		padding: 1.5rem 2rem 1.2rem;
+	}
 	@media (max-width: 768px) {
 		padding: 1rem;
 	}
 `;
 const NavContainer = styled.div`
-	width: 100%;
+	width: 93%;
+	max-width: 97.5rem;
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@media (max-width: 480px) {
+		width: 100%;
+	}
 `;
 const NavSectionContainer = styled.div`
 	display: flex;

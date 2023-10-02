@@ -4,61 +4,51 @@ import styled from "styled-components";
 
 export default function LetsWorkLink() {
 	return (
-		<LetsContainer>
-			<Link
-				href={"/LetsWork"}
-				style={{
-					textDecoration: "none",
-					color: "black",
-				}}>
-				Let's work together
-			</Link>{" "}
-		</LetsContainer>
+		<Wrapper>
+			<LetsContainer>
+				<Link
+					href={"/LetsWork"}
+					style={{
+						textDecoration: "none",
+						color: "#25363D",
+					}}>
+					Let's work together
+				</Link>{" "}
+			</LetsContainer>
+		</Wrapper>
 	);
 }
-
-const LetsContainer = styled.div`
-	font-family: "Arial";
-	min-width: 10.5rem;
-	color: var(--black01);
-	background-color: var(--yellow01);
-	justify-content: center;
+const Wrapper = styled.div`
 	align-items: center;
-	padding: 1rem 0.7rem;
+	justify-content: center;
 	display: flex;
+`;
+const LetsContainer = styled.div`
+	font-family: "Arial", sans-serif;
+	background-color: var(--yellow01);
+	padding: 0.8rem 0.7rem;
+	height: 2.7rem;
 	position: relative;
+	font-size: 1rem;
+
+	@media (max-width: 1280px) {
+	}
 
 	@media (max-width: 768px) {
 		margin-right: 1rem;
-		padding: 0.7rem 0.7rem;
-		justify-content: center;
-		align-items: center;
+		padding: 0.7rem 1rem 0.7rem;
 		font-size: 0.9rem;
-		min-width: 7.5rem;
 	}
 
 	@media (max-width: 402px) {
 		padding: 0.7rem 0.7rem;
-		margin-right: 0.3rem;
-		justify-content: center;
-		align-items: center;
-		font-size: 0.9rem;
-		min-width: 7.5rem;
+		margin-right: 0.4rem;
+		font-size: 0.8rem;
 	}
 	@media (max-width: 390px) {
-		padding: 0.7rem 0.3rem;
-		margin-right: 0.3rem;
-		justify-content: center;
-		align-items: center;
-		font-size: 0.9rem;
+		padding: 0.7rem 0.5rem 0.3rem;
 	}
 	@media (max-width: 359px) {
-		padding: 0.3rem 0.3rem;
-		margin-right: 0.3rem;
-		justify-content: center;
-		align-items: center;
-		font-size: 0.9rem;
-		min-width: 1rem;
-		max-width: 5rem;
+		padding: 0.7rem 0.5rem 0.3rem;
 	}
 `;

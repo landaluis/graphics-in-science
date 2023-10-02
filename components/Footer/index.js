@@ -9,7 +9,7 @@ export default function Footer() {
 		<>
 			<FooterContainer>
 				<InfoLine>
-					<Label>© 2023 GRAPHICS IN SCIENCE St.Nr.6020130782</Label>
+					<Label>© 2023 GRAPHICS IN SCIENCE - St.Nr.6020130782</Label>
 					<LinksFooterWrapper>
 						<HomeLink />
 						<AboutLink />
@@ -27,18 +27,23 @@ const LinksFooterWrapper = styled.div`
 	justify-content: center;
 	grid-column-gap: 3rem;
 	flex-wrap: wrap;
+
+	@media (max-width: 402px) {
+		grid-column-gap: 1rem;
+	}
 `;
 
 const FooterContainer = styled.div`
-	padding: 0 3rem 5rem 0;
-	font-family: "Arial", sans-serif;
+	padding: 0 0rem 5rem 0;
+	font-family: "Times New Roman", serif;
+	display: flex;
+
+	@media (max-width: 402px) {
+		padding: 0 0 3rem 0;
+	}
 `;
 const InfoLine = styled.div`
-	width: calc(100vw - 6rem);
-	min-width: 0;
-	max-width: 97.5rem;
 	color: var(--black01);
-	font-size: 1.25rem;
 	line-height: 1.45;
 	margin-left: auto;
 	margin-right: auto;
@@ -49,8 +54,8 @@ const InfoLine = styled.div`
 `;
 
 const Label = styled.p`
-	font-size: 1rem;
-
+	font-size: 0.8rem;
+	font-stretch: condensed;
 	line-height: 1.45;
 	text-align: center;
 	margin: 0;

@@ -12,7 +12,7 @@ export default function LearnMoreLink() {
 						textDecoration: "none",
 						color: "black",
 					}}>
-					Learn More
+					Learn More →
 				</Link>
 			</LearMoreLinkContainer>
 		</>
@@ -21,7 +21,7 @@ export default function LearnMoreLink() {
 
 const LearMoreLinkContainer = styled.div`
 	font-family: "Arial", sans-serif;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	padding-right: 1.3rem;
 	margin-top: 1rem;
 `;

@@ -11,6 +11,7 @@ export default createGlobalStyle`
   --background-white: #efeeec;
   --grey01: #687277;
   --grey02: #3C4A51;
+  --grey03: #C2C5C5;
   --black01: #10212A;
   --blueContact-us: #25363d;
   --separation-line: #959c9e;
@@ -18,9 +19,10 @@ export default createGlobalStyle`
 
   }
   body {
-    margin: 0;
+ margin: 0;
     font-family: system-ui;
     background-color: var(--background-white);
+   
    
 
   }

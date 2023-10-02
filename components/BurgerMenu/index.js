@@ -29,7 +29,7 @@ export default function BurgerMenu() {
 	return (
 		<>
 			<BurgerButton onClick={toggleMenu} menuOpen={menuOpen}>
-				<div>&#9776;</div>
+				<div>☰</div>
 			</BurgerButton>
 
 			{menuOpen ? (
@@ -67,12 +67,14 @@ const BurgerButton = styled.button`
 		line-height: 1;
 		border-style: solid;
 		border: 2px solid black;
-		padding: 0.6rem;
+		padding: 0.85rem;
 	}
 `;
 
 const SquareMenu = styled.div`
-	background-color: var(--background-white);
+	background-color: white;
+	border-style: solid;
+	border-color: var(--black01);
 	border-width: 2px;
 	display: flex;
 	flex-direction: column;
