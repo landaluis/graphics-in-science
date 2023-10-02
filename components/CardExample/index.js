@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
 import LearnMoreLink from "../LearnMoreLink";
 
 export default function CardExample({ imageUrl, imageUrl2, title, text }) {

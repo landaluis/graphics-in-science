@@ -9,7 +9,7 @@ export default function Logo() {
 				<LogoContainer>
 					{" "}
 					<img
-						src="/logo.jpg"
+						src="../Logo.jpg"
 						alt="Logo"
 						style={{ width: "149px", height: "auto" }}
 					/>
