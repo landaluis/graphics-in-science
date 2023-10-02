@@ -1,47 +1,62 @@
 import React from "react";
 import styled from "styled-components";
+import AboutLink from "../AboutLink";
+import ExamplesLink from "../ExamplesLink";
+import HomeLink from "../HomeLink";
 
 export default function Footer() {
 	return (
 		<>
-			<InfoContainer>
+			<FooterContainer>
 				<InfoLine>
-					<Label>Email</Label>
-					<InfoText>andresalegria@live.com</InfoText>
+					<Label>© 2023 GRAPHICS IN SCIENCE - St.Nr.6020130782</Label>
+					<LinksFooterWrapper>
+						<HomeLink />
+						<AboutLink />
+						<ExamplesLink />
+					</LinksFooterWrapper>
 				</InfoLine>
-			</InfoContainer>
+			</FooterContainer>
 		</>
 	);
 }
 
-const InfoContainer = styled.div`
-	font-size: 16px;
-	font-family: "CaviarDreams", sans-serif;
-	margin-bottom: 0px;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	background-color: #7e9ba5;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 80px;
-`;
-const InfoLine = styled.p`
+const LinksFooterWrapper = styled.div`
 	display: flex;
 	align-items: center;
-	padding: 5px 20px;
-	margin: 0px;
+	justify-content: center;
+	grid-column-gap: 3rem;
+	flex-wrap: wrap;
+
+	@media (max-width: 402px) {
+		grid-column-gap: 1rem;
+	}
 `;
 
-const Label = styled.span`
-	font-family: "CaviarDreams", sans-serif;
-	margin-right: 10px;
-	color: white;
-	min-width: 60px;
+const FooterContainer = styled.div`
+	padding: 0 0rem 5rem 0;
+	font-family: "Times New Roman", serif;
+	display: flex;
+
+	@media (max-width: 402px) {
+		padding: 0 0 3rem 0;
+	}
+`;
+const InfoLine = styled.div`
+	color: var(--black01);
+	line-height: 1.45;
+	margin-left: auto;
+	margin-right: auto;
+	grid-column-gap: 3rem;
+	grid-row-gap: 3rem;
+	display: flex;
+	flex-direction: column;
 `;
 
-const InfoText = styled.span`
-	font-family: "Poppins-Regular", sans-serif;
-	color: white;
+const Label = styled.p`
+	font-size: 0.8rem;
+	font-stretch: condensed;
+	line-height: 1.45;
+	text-align: center;
+	margin: 0;
 `;
