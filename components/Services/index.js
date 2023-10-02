@@ -143,7 +143,7 @@ const ServicesContainer = styled.div`
 
 const TitleServices = styled.h2`
 	font-family: "Times Roman Regular", serif;
-	font-weight: lighter;
+	font-weight: Bold;
 	font-size: 2.5rem;
 	margin-bottom: 10px;
 

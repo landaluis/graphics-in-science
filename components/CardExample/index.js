@@ -44,11 +44,15 @@ export default function CardExample({ imageUrl, imageUrl2, title, text }) {
 
 const Text = styled.p`
 	font-family: "Arial", sans-serif;
-
 	width: 90%;
+	// min-width: 60rem;
 	font-size: 0.95rem;
 	line-height: 1.3rem;
 	color: var(--grey01);
+
+	@media (max-width: 1620px) {
+		min-width: 0;
+	}
 
 	@media (max-width: 1280px) {
 		line-height: 0.9rem;
@@ -62,7 +66,7 @@ const Text = styled.p`
 const Title = styled.h3`
 	color: var(--black01);
 	font-family: "Times Roman Regular";
-	font-weight: lighter;
+	font-weight: bold;
 	font-size: 2rem;
 	margin: 10px 0;
 	display: flex;
@@ -86,7 +90,11 @@ const CardContainer = styled.div`
 	grid-row-gap: 2.5rem;
 	display: flex;
 	align-items: center;
-	width: 90%;
+	width: 75%;
+
+	@media (max-width: 1420px) {
+		width: 90%;
+	}
 
 	@media (max-width: 820px) {
 		width: 85%;
@@ -116,6 +124,7 @@ const Card = styled.div`
 
 const CardSectionContainer = styled.div`
 	display: flex;
+	position: relative;
 	flex-direction: row;
 	align-items: center;
 
