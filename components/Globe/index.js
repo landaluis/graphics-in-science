@@ -63,7 +63,6 @@ export default function Globe() {
 }
 
 const Container = styled.div`
-	// border: 1px solid red;
 	position: relative;
 	overflow: hidden;
 	width: 55%;

@@ -10,8 +10,9 @@ export default function MyStory() {
 				<MyStoryIntroText>
 					Hi, my name is Andrés Alegria. Graphics in Science is my freelancing
 					front page to offer my services as data scientist and graphic
-					designer. I'm also a marine ecologist and a pationate reef hugger. I
-					enjoy working with graphics almost as much I like being underwater.
+					designer. I&apos;m also a marine ecologist and a pationate reef
+					hugger. I enjoy working with graphics almost as much I like being
+					underwater.
 				</MyStoryIntroText>
 				<MyStoryLinkContainer>
 					<Link

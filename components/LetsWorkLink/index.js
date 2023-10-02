@@ -10,9 +10,9 @@ export default function LetsWorkLink() {
 					href={"/LetsWork"}
 					style={{
 						textDecoration: "none",
-						color: "#25363D",
+						color: "#25363d",
 					}}>
-					Let's work together
+					Let&apos;s work together
 				</Link>{" "}
 			</LetsContainer>
 		</Wrapper>
