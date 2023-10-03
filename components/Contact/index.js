@@ -3,10 +3,10 @@ import styled from "styled-components";
 import LinkedInLink from "../LinkedInLink";
 import BehanceLink from "../BehanceLink";
 
-export default function Contact() {
+export default function Contact({ ref3 }) {
 	return (
 		<>
-			<SeparationUp></SeparationUp>
+			<SeparationUp ref={ref3}></SeparationUp>
 
 			<ContactWrapper>
 				<ContactInfo>

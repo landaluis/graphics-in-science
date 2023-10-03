@@ -4,7 +4,7 @@ import AboutLink from "../AboutLink";
 import ExamplesLink from "../ExamplesLink";
 import HomeLink from "../HomeLink";
 
-export default function Footer() {
+export default function Footer({ handleClick, handleClickExamples }) {
 	return (
 		<>
 			<FooterContainer>
@@ -12,8 +12,8 @@ export default function Footer() {
 					<Label>© 2023 GRAPHICS IN SCIENCE - St.Nr.6020130782</Label>
 					<LinksFooterWrapper>
 						<HomeLink />
-						<AboutLink />
-						<ExamplesLink />
+						<AboutLink handleClick={handleClick} />
+						<ExamplesLink handleClickExamples={handleClickExamples} />
 					</LinksFooterWrapper>
 				</InfoLine>
 			</FooterContainer>

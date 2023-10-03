@@ -7,13 +7,14 @@ import MyStory from "../MyStory";
 import Contact from "../Contact";
 import IntroParagraphGlobeSection from "../IntroParagraphGlobeSection";
 
-export default function PageWrap() {
+export default function PageWrap({ ref1, ref2, ref3, handleWorkTogether }) {
 	return (
 		<>
 			<PageWrapContainer>
 				<SeparationDiv></SeparationDiv>
-				<IntroParagraphGlobeSection />
-				<Services />{" "}
+				<IntroParagraphGlobeSection handleWorkTogether={handleWorkTogether} />
+				<Services ref2={ref2} />
+
 				<CardExample
 					imageUrl="../TitleExample1.jpg"
 					title="Climate Science"
@@ -49,9 +50,10 @@ export default function PageWrap() {
 					learnMoreLink="https://www.behance.net/gallery/38040031/Fishermens-Magazine-3"
 					imageUrl2="../ImageExample4.jpg"
 				/>
-				<MoreExamples />
+				<MoreExamples ref1={ref1} />
 				<MyStory />
-				<Contact />
+
+				<Contact ref3={ref3} />
 			</PageWrapContainer>
 		</>
 	);

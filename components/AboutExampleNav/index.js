@@ -3,12 +3,12 @@ import styled from "styled-components";
 import AboutLink from "../AboutLink";
 import ExamplesLink from "../ExamplesLink";
 
-export default function AboutExampleNav() {
+export default function AboutExampleNav({ handleClick, handleClickExamples }) {
 	return (
 		<>
 			<NavContainer>
-				<AboutLink />
-				<ExamplesLink />
+				<AboutLink handleClick={handleClick} />
+				<ExamplesLink handleClickExamples={handleClickExamples} />
 			</NavContainer>
 		</>
 	);

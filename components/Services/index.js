@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Services() {
+export default function Services({ ref2 }) {
 	return (
 		<ServicesContainer>
 			{" "}
@@ -19,7 +19,7 @@ export default function Services() {
 			</DecorationContainer1>
 			<DecorationContainer2>
 				{" "}
-				<DecorationDiv4></DecorationDiv4>
+				<DecorationDiv4 ref={ref2}></DecorationDiv4>
 				<DecorationDiv5></DecorationDiv5>
 				<DecorationDiv6></DecorationDiv6>
 			</DecorationContainer2>

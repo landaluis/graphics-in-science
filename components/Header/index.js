@@ -4,14 +4,22 @@ import Logo from "../Logo";
 import RightNavBar from "../RightNavBar";
 import BurgerMenu from "../BurgerMenu";
 
-export default function Header() {
+export default function Header({
+	handleClick,
+	handleClickExamples,
+	handleWorkTogether,
+}) {
 	return (
 		<HeaderContainer>
 			<NavContainer>
 				<Logo />
 				<NavSectionContainer>
 					<BurgerMenu />
-					<RightNavBar />
+					<RightNavBar
+						handleClick={handleClick}
+						handleClickExamples={handleClickExamples}
+						handleWorkTogether={handleWorkTogether}
+					/>
 				</NavSectionContainer>
 			</NavContainer>
 		</HeaderContainer>
