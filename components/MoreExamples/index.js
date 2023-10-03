@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-export default function MoreExamples() {
+export default function MoreExamples({ ref1 }) {
 	return (
 		<>
-			<MoreExamplesContainer>
+			<MoreExamplesContainer ref={ref1}>
 				<Link
 					href="https://www.behance.net/andres-alegria"
 					style={{

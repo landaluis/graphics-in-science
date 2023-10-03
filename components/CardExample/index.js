@@ -9,10 +9,11 @@ export default function CardExample({
 	title,
 	text,
 	learnMoreLink,
+	ref2,
 }) {
 	return (
 		<>
-			<CardContainer>
+			<CardContainer ref={ref2}>
 				<Card>
 					<CardSectionContainer>
 						<LeftSectionCard>

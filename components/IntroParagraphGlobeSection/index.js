@@ -3,11 +3,11 @@ import Globe from "../Globe";
 import React from "react";
 import styled from "styled-components";
 
-export default function IntroParagraphGlobeSection() {
+export default function IntroParagraphGlobeSection({ handleWorkTogether }) {
 	return (
 		<>
 			<Container>
-				<IntroParagraph />
+				<IntroParagraph handleWorkTogether={handleWorkTogether} />
 
 				<Globe />
 			</Container>

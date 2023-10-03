@@ -4,7 +4,7 @@ import LetsWorkLink from "../LetsWorkLink";
 import LinkedInLink from "../LinkedInLink";
 import BehanceLink from "../BehanceLink";
 
-export default function IntroParagraph() {
+export default function IntroParagraph({ handleWorkTogether }) {
 	return (
 		<>
 			<ParagraphContainer>
@@ -21,7 +21,7 @@ export default function IntroParagraph() {
 						learning.
 					</ParagraphText>
 					<LetsWorkLinkContainer>
-						<LetsWorkLink />
+						<LetsWorkLink handleWorkTogether={handleWorkTogether} />
 					</LetsWorkLinkContainer>
 					<LinkedInBehanceContainer>
 						<LinkedInLink color="var(--grey02)" />
@@ -54,7 +54,6 @@ const LinkedInBehanceContainer = styled.div`
 
 const LetsWorkLinkContainer = styled.div`
 	margin-top: 3rem;
-	z-index: -1;
 
 	@media (max-width: 890px) {
 		margin-top: 2rem;
@@ -62,7 +61,6 @@ const LetsWorkLinkContainer = styled.div`
 	}
 
 	@media (max-width: 768px) {
-		z-index: -1;
 		margin-top: 1.5rem;
 		margin-bottom: 1rem;
 	}

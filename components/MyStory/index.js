@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "next/link";
-import { useRef } from "react";
 
 export default function MyStory() {
 	return (
