@@ -1,33 +1,39 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
+import { useRef } from "react";
 
 export default function MyStory() {
 	return (
 		<>
 			<MyStoryIntroContainer>
 				{" "}
+				<MyStoryTitle>My Story</MyStoryTitle>
 				<MyStoryIntroText>
-					Hi, my name is Andrés Alegria. Graphics in Science is my freelancing
-					front page to offer my services as data scientist and graphic
-					designer. I&apos;m also a marine ecologist and a pationate reef
-					hugger. I enjoy working with graphics almost as much I like being
-					underwater.
+					Hi, my name is Andrés Alegría. Graphics in Science is my freelancing
+					front page to offer services as data scientist and graphic designer.
+					I&apos;m also a marine ecologist and a pationate reef hugger. I enjoy
+					working with graphics almost as much I like being underwater.
 				</MyStoryIntroText>
-				<MyStoryLinkContainer>
-					<Link
-						href={"/about"}
-						style={{
-							textDecoration: "none",
-							color: "#D9DAD9",
-						}}>
-						My story
-					</Link>
-				</MyStoryLinkContainer>
 			</MyStoryIntroContainer>
 		</>
 	);
 }
+
+const MyStoryTitle = styled.h2`
+	font-family: "CormorantGaramond", serif;
+	font-weight: Bold;
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+
+	@media (max-width: 1024px) {
+		font-size: 2.3rem;
+	}
+
+	@media (max-width: 768px) {
+		margin-top: 10px;
+	}
+`;
 
 const MyStoryIntroContainer = styled.div`
 	grid-column-gap: 2rem;
@@ -37,6 +43,8 @@ const MyStoryIntroContainer = styled.div`
 	justify-content: center;
 	flex-direction: column;
 	width: 100%;
+	color: var(--black01);
+	margin-top: 2rem;
 
 	@media (max-width: 402px) {
 		margin-top: 2rem;
@@ -59,10 +67,11 @@ const MyStoryLinkContainer = styled.div`
 `;
 
 const MyStoryIntroText = styled.p`
+	margin-top: 0;
 	width: 60%;
 	display: flex;
 	justify-content: center;
-	font-family: "Times Roman Regular", serif;
+	font-family: "Times New Roman", serif;
 	font-size: 1.9rem;
 	line-height: 1.3;
 	text-align: justified;
@@ -105,6 +114,5 @@ const MyStoryIntroText = styled.p`
 		padding: 0;
 		text-align: left;
 		font-size: 1.6rem;
-		margin: 0;
 	}
 `;

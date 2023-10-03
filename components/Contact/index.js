@@ -12,6 +12,9 @@ export default function Contact() {
 				<ContactInfo>
 					<LeftSectionContact>Contact</LeftSectionContact>
 					<RightSectionContact>
+						<Message>
+							Send me an email, I look forward hearing from you!
+						</Message>
 						<EmailSection>andres@graphicsinscience.com</EmailSection>
 						<LinksSection>
 							<LinkedInLink color="var(--grey03)" />
@@ -67,6 +70,11 @@ const LinksSection = styled.div`
 	}
 `;
 
+const Message = styled.div`
+	font-family: "Helvetica", sans-serif;
+	font-size: 1.2rem;
+	color: var(--grey03);
+`;
 const EmailSection = styled.div`
 	font-family: "Helvetica", sans-serif;
 	font-size: 1.1rem;
@@ -76,7 +84,7 @@ const EmailSection = styled.div`
 const LeftSectionContact = styled.div`
 	margin-top: 0;
 	margin-bottom: 0;
-	font-family: "Times New Roman", serif;
+	font-family: "CormorantGaramond", serif;
 	font-weight: lighter;
 	font-size: 2.5rem;
 	line-height: 1.25;
@@ -126,7 +134,7 @@ const ContactWrapper = styled.div`
 	position: relative;
 	background-color: var(--blueContact-us);
 	color: var(--background-white);
-	font-family: Times Roman Regular;
+	font-family: "CormorantGaramond", serif;
 	font-size: 1.25rem;
 	line-height: 1.45;
 

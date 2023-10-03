@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
+// import Image from "next/image";
 
 export default function Logo() {
 	return (
@@ -19,9 +20,18 @@ export default function Logo() {
 	);
 }
 
+// const StyledLogo = styled(Image)`
+// 	width: 149px;
+// 	height: auto;
+
+// 	@media (max-width: 768px) {
+// 		width: 120px;
+// 	}
+// `;
 const LogoContainer = styled.div`
-	@media (max-width: 768px) {
-		margin: 0px;
-		padding: 0px;
-	}
+	// border: 1px solid red;
+
+	// @media (max-width: 768px) {
+	// 	width: 120px;
+	// }
 `;

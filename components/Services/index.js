@@ -7,10 +7,9 @@ export default function Services() {
 			{" "}
 			<TitleServices>Services</TitleServices>
 			<ParagraphServices>
-				Functional and aesthetic enhancement of scientific graphics to make
-				their communication more effective. This is achived when the
-				intentionality of the data is expressed through thoughtful design
-				sensibilities.
+				Functional and aesthetic enhancement of scientific graphics to make your
+				communication more effective. This is achieved when the intentionality
+				of your data is expressed through thoughtful design sensibilities.
 			</ParagraphServices>
 			<DecorationContainer1>
 				{" "}
@@ -142,7 +141,7 @@ const ServicesContainer = styled.div`
 `;
 
 const TitleServices = styled.h2`
-	font-family: "Times Roman Regular", serif;
+	font-family: "CormorantGaramond", serif;
 	font-weight: Bold;
 	font-size: 2.5rem;
 	margin-bottom: 10px;

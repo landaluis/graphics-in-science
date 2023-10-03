@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-export default function LearnMoreLink() {
+export default function LearnMoreLink({ href }) {
 	return (
 		<>
 			<LearMoreLinkContainer>
 				<Link
-					href={"/about"}
+					href={href}
 					style={{
 						textDecoration: "none",
 						color: "black",

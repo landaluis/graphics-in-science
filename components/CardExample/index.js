@@ -3,7 +3,13 @@ import styled from "styled-components";
 import Image from "next/image";
 import LearnMoreLink from "../LearnMoreLink";
 
-export default function CardExample({ imageUrl, imageUrl2, title, text }) {
+export default function CardExample({
+	imageUrl,
+	imageUrl2,
+	title,
+	text,
+	learnMoreLink,
+}) {
 	return (
 		<>
 			<CardContainer>
@@ -22,7 +28,7 @@ export default function CardExample({ imageUrl, imageUrl2, title, text }) {
 
 								<Title>{title}</Title>
 								<Text>{text}</Text>
-								<LearnMoreLink>Learn more</LearnMoreLink>
+								<LearnMoreLink href={learnMoreLink}>Learn more</LearnMoreLink>
 							</SectionWrapper>
 						</LeftSectionCard>
 						<RightSectionCard>
@@ -45,17 +51,15 @@ export default function CardExample({ imageUrl, imageUrl2, title, text }) {
 const Text = styled.p`
 	font-family: "Arial", sans-serif;
 	width: 90%;
-	// min-width: 60rem;
 	font-size: 0.95rem;
 	line-height: 1.3rem;
 	color: var(--grey01);
 
 	@media (max-width: 1620px) {
-		min-width: 0;
 	}
 
 	@media (max-width: 1280px) {
-		line-height: 0.9rem;
+		line-height: 1.1rem;
 	}
 
 	@media (max-width: 820px) {
@@ -65,7 +69,7 @@ const Text = styled.p`
 
 const Title = styled.h3`
 	color: var(--black01);
-	font-family: "Times Roman Regular";
+	font-family: "CormorantGaramond", serif;
 	font-weight: bold;
 	font-size: 2rem;
 	margin: 10px 0;
@@ -117,8 +121,12 @@ const Card = styled.div`
 		padding: 1.5rem 1.5rem;
 	}
 
+	@media (max-width: 600px) {
+		padding: 1.4rem 1.4rem;
+	}
+
 	@media (max-width: 402px) {
-		padding: 1.5rem 1.5rem;
+		// padding: 1.5rem 1.5rem;
 	}
 `;
 

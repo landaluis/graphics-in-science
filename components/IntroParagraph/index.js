@@ -14,8 +14,11 @@ export default function IntroParagraph() {
 				<Content>
 					{" "}
 					<ParagraphText>
-						Communicating effectively means presenting knowledge to your
-						audience in a way that they can learn from it.
+						When utilizing data visualizations, it is crucial to convey the
+						purpose of your data through careful design sensitivities to achieve
+						effective communication. Whenever you share information with your
+						audience, ensure that it is presented in a manner that facilitates
+						learning.
 					</ParagraphText>
 					<LetsWorkLinkContainer>
 						<LetsWorkLink />
@@ -78,8 +81,8 @@ const ParagraphText = styled.p`
 	max-width: 90%;
 	margin: 0 2rem 0 0;
 	font-family: "Arial";
-	font-size: 1rem;
-	line-height: 1.2rem;
+	font-size: 1.1rem;
+	line-height: 1.4rem;
 
 	@media (max-width: 1024px) {
 		font-size: 0.95rem;
@@ -87,9 +90,9 @@ const ParagraphText = styled.p`
 	}
 `;
 const ParagraphTitle = styled.h1`
-	font-family: "Times New Roman", serif;
-	font-size: 3.25rem;
-	font-weight: bold;
+	font-family: "CormorantGaramond", serif;
+	font-size: 3.55rem;
+	// font-weight: bold;
 	line-height: 3.6rem;
 
 	@media (max-width: 1280px) {

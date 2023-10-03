@@ -7,7 +7,7 @@ export default function MoreExamples() {
 		<>
 			<MoreExamplesContainer>
 				<Link
-					href={"/about"}
+					href="https://www.behance.net/andres-alegria"
 					style={{
 						textDecoration: "none",
 						color: "#D9DAD9",

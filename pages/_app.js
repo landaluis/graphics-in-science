@@ -1,5 +1,6 @@
 import GlobalStyle from "@/styles";
 import Head from "next/head";
+import { useRef } from "react";
 
 export default function App({ Component, pageProps }) {
 	return (
