@@ -35,7 +35,7 @@ const LinksFooterWrapper = styled.div`
 
 const FooterContainer = styled.div`
 	padding: 0 0rem 5rem 0;
-	font-family: "Times New Roman", serif;
+	font-family: "CormorantGaramond", serif;
 	display: flex;
 
 	@media (max-width: 402px) {

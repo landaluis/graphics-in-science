@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import Services from "../Services";
 import CardExample from "../CardExample";
@@ -12,18 +12,16 @@ export default function PageWrap() {
 		<>
 			<PageWrapContainer>
 				<SeparationDiv></SeparationDiv>
-
 				<IntroParagraphGlobeSection />
-
-				<Services />
-
+				<Services />{" "}
 				<CardExample
 					imageUrl="../TitleExample1.jpg"
 					title="Climate Science"
 					text="Supported the developing of more than 300 figures featured the
 		6th Assesment Report of the Intergovernmental Panel on Climate
 		Change."
-					learnMoreLink="https://example.com/page1"
+					learnMoreLink="https://www.behance.net/gallery/151953673/My-experience-with-the-IPCC
+					"
 					imageUrl2="../ImageExample1.jpg"
 				/>
 				<CardExample
@@ -32,32 +30,27 @@ export default function PageWrap() {
 					text="I help environmental journalist in designing data-driven graphic products
 				that can effectively communicate complex information to a general audience
 				who may not be experts in the field."
-					learnMoreLink="https://example.com/page1"
+					learnMoreLink="https://www.behance.net/gallery/146417585/Maps-for-articles"
 					imageUrl2="../ImageExample2.jpg"
 				/>
-
 				<CardExample
 					imageUrl="../TitleExample3.jpg"
 					title="Interactive dashboards"
 					text="I create interactive visualizations for scientist and wider audiences."
-					learnMoreLink="https://example.com/page1"
+					learnMoreLink="https://public.tableau.com/app/profile/andres.alegria/vizzes"
 					imageUrl2="../ImageExample3.jpg"
 				/>
-
 				<CardExample
 					imageUrl="../TitleExample4.jpg"
 					title="Fisheries management"
 					text="In the context of coral reef conservation in the Caribbean, I have supported
 				communication compaigns targeting a wide array of stakeholders demanding diverse media
 				outputs."
-					learnMoreLink="https://example.com/page1"
+					learnMoreLink="https://www.behance.net/gallery/38040031/Fishermens-Magazine-3"
 					imageUrl2="../ImageExample4.jpg"
 				/>
-
 				<MoreExamples />
-
 				<MyStory />
-
 				<Contact />
 			</PageWrapContainer>
 		</>

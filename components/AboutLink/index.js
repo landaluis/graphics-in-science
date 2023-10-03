@@ -1,22 +1,15 @@
-import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
 export default function AboutLink() {
 	return (
 		<AboutLinkContainer>
-			<Link
-				href={"/about"}
-				style={{
-					textDecoration: "none",
-					color: "#10212A",
-				}}>
-				About
-			</Link>
+			<About>About</About>
 		</AboutLinkContainer>
 	);
 }
 
+const About = styled.div``;
 const AboutLinkContainer = styled.div`
 	padding: 8px 10px;
 	font-family: "Arial", sans-serif;

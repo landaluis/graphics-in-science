@@ -8,7 +8,7 @@ export default function BehanceLink({ color }) {
 		<>
 			<LinkContainer>
 				<StyledLink
-					href={"https://behance.net/"}
+					href={"https://www.behance.net/andres-alegria"}
 					style={{
 						textDecoration: "none",
 						color: color,

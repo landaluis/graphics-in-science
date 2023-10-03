@@ -2,6 +2,14 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/CormorantGaramond-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
   *,
   *::before,
   *::after {
