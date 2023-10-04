@@ -4,7 +4,13 @@ import styled from "styled-components";
 export default function AboutLink({ handleClick }) {
 	return (
 		<AboutLinkContainer>
-			<About onClick={handleClick}>About</About>
+			<About
+				onClick={handleClick}
+				style={{
+					color: black,
+				}}>
+				About
+			</About>
 		</AboutLinkContainer>
 	);
 }

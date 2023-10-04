@@ -5,7 +5,13 @@ import styled from "styled-components";
 export default function ExamplesLink({ handleClickExamples }) {
 	return (
 		<ExamplesLinkContainer>
-			<Examples onClick={handleClickExamples}>Examples</Examples>
+			<Examples
+				onClick={handleClickExamples}
+				style={{
+					color: black,
+				}}>
+				Examples
+			</Examples>
 		</ExamplesLinkContainer>
 	);
 }

@@ -1,11 +1,14 @@
-import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
 export default function LetsWorkLink({ handleWorkTogether }) {
 	return (
 		<Wrapper>
-			<LetsContainer onClick={handleWorkTogether}>
+			<LetsContainer
+				onClick={handleWorkTogether}
+				style={{
+					color: black,
+				}}>
 				Let&apos;s work together{" "}
 			</LetsContainer>
 		</Wrapper>
