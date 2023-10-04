@@ -68,7 +68,4 @@ const Label = styled.p`
 	@media (max-width: 640px) {
 		font-size: 1rem;
 	}
-	@media (max-width: 400px) {
-		font-size: 0.9rem;
-	}
 `;
