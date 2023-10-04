@@ -141,13 +141,12 @@ const ServicesContainer = styled.div`
 `;
 
 const TitleServices = styled.h2`
-	font-family: "CormorantGaramond", serif;
-	font-weight: Bold;
-	font-size: 2.5rem;
+	font-family: "PlayfairDisplay-Bold", serif;
+	font-size: 2.3rem;
 	margin-bottom: 10px;
 
 	@media (max-width: 1024px) {
-		font-size: 2.3rem;
+		font-size: 2.2rem;
 	}
 
 	@media (max-width: 768px) {
@@ -161,5 +160,8 @@ const ParagraphServices = styled.p`
 
 	@media (max-width: 768px) {
 		line-height: 1.6rem;
+	}
+	@media (max-width: 402px) {
+		line-height: 1.5rem;
 	}
 `;

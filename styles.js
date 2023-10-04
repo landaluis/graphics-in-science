@@ -2,6 +2,18 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 
+@font-face {
+  font-family: 'PlayfairDisplay-Bold';
+  src: url('/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: Bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'CormorantGaramond';

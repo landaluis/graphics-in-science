@@ -54,24 +54,23 @@ const Text = styled.p`
 	width: 90%;
 	font-size: 0.95rem;
 	line-height: 1.3rem;
-	color: var(--grey01);
+	color: var(--grey02);
 
 	@media (max-width: 1620px) {
 	}
 
 	@media (max-width: 1280px) {
-		line-height: 1.1rem;
+		line-height: 1.2rem;
 	}
 
 	@media (max-width: 820px) {
-		line-height: 1.2rem;
+		// line-height: 1.2rem;
 	}
 `;
 
 const Title = styled.h3`
-	color: var(--black01);
-	font-family: "CormorantGaramond", serif;
-	font-weight: bold;
+	color: var(--blueContact-us);
+	font-family: "PlayfairDisplay-Bold", serif;
 	font-size: 2rem;
 	margin: 10px 0;
 	display: flex;

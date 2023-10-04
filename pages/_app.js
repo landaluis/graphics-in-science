@@ -6,19 +6,16 @@ export default function App({ Component, pageProps }) {
 	const ref1 = useRef(null);
 	const handleClick = () => {
 		ref1.current?.scrollIntoView({ behavior: "smooth" });
-		console.log("Yo tambien clicke about");
 	};
 
 	const ref2 = useRef(null);
 	const handleClickExamples = () => {
 		ref2.current?.scrollIntoView({ behavior: "smooth" });
-		console.log("Yo tambien clicke examples");
 	};
 
 	const ref3 = useRef(null);
 	const handleWorkTogether = () => {
 		ref3.current?.scrollIntoView({ behavior: "smooth" });
-		console.log("Yo tambien clicke worktogheter");
 	};
 	return (
 		<>

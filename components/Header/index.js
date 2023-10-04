@@ -14,7 +14,7 @@ export default function Header({
 			<NavContainer>
 				<Logo />
 				<NavSectionContainer>
-					<BurgerMenu />
+					{/* <BurgerMenu /> */}
 					<RightNavBar
 						handleClick={handleClick}
 						handleClickExamples={handleClickExamples}

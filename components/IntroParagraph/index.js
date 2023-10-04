@@ -84,13 +84,15 @@ const ParagraphText = styled.p`
 
 	@media (max-width: 1024px) {
 		font-size: 0.95rem;
-		line-height: 1.3rem;
+		// line-height: 1.3rem;
 	}
 `;
 const ParagraphTitle = styled.h1`
-	font-family: "CormorantGaramond", serif;
+	font-family: "PlayfairDisplay-Bold", serif;
 	font-size: 3.55rem;
+	color: var(--blueContact-us);
 	// font-weight: bold;
+
 	line-height: 3.6rem;
 
 	@media (max-width: 1280px) {
