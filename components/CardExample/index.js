@@ -126,7 +126,7 @@ const Card = styled.div`
 	}
 
 	@media (max-width: 402px) {
-		// padding: 1.5rem 1.5rem;
+		padding: 1.2rem 1.1rem;
 	}
 `;
 

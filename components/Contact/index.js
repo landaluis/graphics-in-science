@@ -82,6 +82,10 @@ const EmailSection = styled.div`
 	font-family: "Calibri", sans-serif;
 	font-size: 1.4rem;
 	color: var(--grey03);
+
+	@media (max-width: 360px) {
+		font-size: 1.2rem;
+	}
 `;
 
 const LeftSectionContact = styled.div`

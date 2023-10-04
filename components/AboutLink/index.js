@@ -7,7 +7,7 @@ export default function AboutLink({ handleClick }) {
 			<About
 				onClick={handleClick}
 				style={{
-					color: black,
+					color: "#10212A",
 				}}>
 				About
 			</About>

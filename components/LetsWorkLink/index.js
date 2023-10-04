@@ -7,7 +7,7 @@ export default function LetsWorkLink({ handleWorkTogether }) {
 			<LetsContainer
 				onClick={handleWorkTogether}
 				style={{
-					color: black,
+					color: "#10212A",
 				}}>
 				Let&apos;s work together{" "}
 			</LetsContainer>

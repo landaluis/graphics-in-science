@@ -8,7 +8,7 @@ export default function ExamplesLink({ handleClickExamples }) {
 			<Examples
 				onClick={handleClickExamples}
 				style={{
-					color: black,
+					color: "#10212A",
 				}}>
 				Examples
 			</Examples>
