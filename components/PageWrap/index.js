@@ -91,7 +91,7 @@ const PageWrapContainer = styled.div`
 
 	@media (max-width: 768px) {
 		align-items: center;
-		margin-bottom: 110px;
+		margin-bottom: 1rem;
 	}
 
 	@media (max-width: 640px) {

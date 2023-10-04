@@ -54,9 +54,21 @@ const InfoLine = styled.div`
 `;
 
 const Label = styled.p`
-	font-size: 0.8rem;
-	font-stretch: condensed;
+	font-size: 1.5rem;
+	font-family: "CormorantGaramond", serif;
+	// font-stretch: condensed;
 	line-height: 1.45;
 	text-align: center;
 	margin: 0;
+
+	@media (max-width: 1280px) {
+		font-size: 1.3rem;
+	}
+
+	@media (max-width: 640px) {
+		font-size: 1rem;
+	}
+	@media (max-width: 400px) {
+		font-size: 0.9rem;
+	}
 `;

@@ -19,10 +19,10 @@ export default function MyStory() {
 }
 
 const MyStoryTitle = styled.h2`
-	font-family: "CormorantGaramond", serif;
-	font-weight: Bold;
+	font-family: "PlayfairDisplay-Bold", serif;
 	font-size: 2.5rem;
 	margin-bottom: 10px;
+	color: var(--blueContact-us);
 
 	@media (max-width: 1024px) {
 		font-size: 2.3rem;

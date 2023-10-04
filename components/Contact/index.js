@@ -68,23 +68,26 @@ const LinksSection = styled.div`
 	@media (max-width: 560px) {
 		grid-column-gap: 1rem;
 	}
+	@media (max-width: 402px) {
+		margin-top: 14px;
+	}
 `;
 
 const Message = styled.div`
-	font-family: "Helvetica", sans-serif;
 	font-size: 1.2rem;
 	color: var(--grey03);
+	font-family: "Calibri", sans-serif;
 `;
 const EmailSection = styled.div`
-	font-family: "Helvetica", sans-serif;
-	font-size: 1.1rem;
+	font-family: "Calibri", sans-serif;
+	font-size: 1.4rem;
 	color: var(--grey03);
 `;
 
 const LeftSectionContact = styled.div`
 	margin-top: 0;
 	margin-bottom: 0;
-	font-family: "CormorantGaramond", serif;
+	font-family: "PlayfairDisplay", serif;
 	font-weight: lighter;
 	font-size: 2.5rem;
 	line-height: 1.25;
@@ -157,6 +160,6 @@ const ContactWrapper = styled.div`
 
 	@media (max-width: 402px) {
 		flex-direction: column;
-		padding: 1rem;
+		// padding: 2rem;
 	}
 `;
