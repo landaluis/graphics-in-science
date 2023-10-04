@@ -84,15 +84,12 @@ const ParagraphText = styled.p`
 
 	@media (max-width: 1024px) {
 		font-size: 0.95rem;
-		// line-height: 1.3rem;
 	}
 `;
 const ParagraphTitle = styled.h1`
 	font-family: "PlayfairDisplay-Bold", serif;
 	font-size: 3.55rem;
 	color: var(--blueContact-us);
-	// font-weight: bold;
-
 	line-height: 3.6rem;
 
 	@media (max-width: 1280px) {
@@ -106,7 +103,6 @@ const ParagraphTitle = styled.h1`
 
 	@media (max-width: 890px) {
 		font-size: 2.2rem;
-		line-height: 3rem;
 	}
 `;
 
@@ -124,8 +120,5 @@ const ParagraphContainer = styled.div`
 	}
 	@media (max-width: 820px) {
 		width: 95%;
-	}
-
-	@media (max-width: 768px) {
 	}
 `;

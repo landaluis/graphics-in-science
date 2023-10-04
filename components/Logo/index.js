@@ -20,22 +20,9 @@ export default function Logo() {
 	);
 }
 
-// const StyledLogo = styled(Image)`
-// 	width: 149px;
-// 	height: auto;
-
-// 	@media (max-width: 768px) {
-// 		width: 120px;
-// 	}
-// `;
 const LogoContainer = styled.div`
-	// border: 1px solid red;
 	width: 151px;
 	height: auto;
-
-	@media (max-width: 768px) {
-		width: 120px;
-	}
 
 	@media (max-width: 768px) {
 		width: 120px;

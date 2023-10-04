@@ -127,7 +127,6 @@ const ContactInfo = styled.div`
 	}
 
 	@media (max-width: 402px) {
-		// margin: 0 rem 0;
 		grid-row-gap: 1.5rem;
 	}
 `;
@@ -164,6 +163,5 @@ const ContactWrapper = styled.div`
 
 	@media (max-width: 402px) {
 		flex-direction: column;
-		// padding: 2rem;
 	}
 `;

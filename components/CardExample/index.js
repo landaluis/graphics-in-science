@@ -62,10 +62,6 @@ const Text = styled.p`
 	@media (max-width: 1280px) {
 		line-height: 1.2rem;
 	}
-
-	@media (max-width: 820px) {
-		// line-height: 1.2rem;
-	}
 `;
 
 const Title = styled.h3`
