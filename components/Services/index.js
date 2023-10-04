@@ -3,30 +3,38 @@ import styled from "styled-components";
 
 export default function Services({ ref2 }) {
 	return (
-		<ServicesContainer>
-			{" "}
-			<TitleServices>Services</TitleServices>
-			<ParagraphServices>
-				Functional and aesthetic enhancement of scientific graphics to make your
-				communication more effective. This is achieved when the intentionality
-				of your data is expressed through thoughtful design sensibilities.
-			</ParagraphServices>
-			<DecorationContainer1>
+		<>
+			<ServicesContainer>
 				{" "}
-				<DecorationDiv1></DecorationDiv1>
-				<DecorationDiv2></DecorationDiv2>
-				<DecorationDiv3></DecorationDiv3>
-			</DecorationContainer1>
-			<DecorationContainer2>
-				{" "}
-				<DecorationDiv4 ref={ref2}></DecorationDiv4>
-				<DecorationDiv5></DecorationDiv5>
-				<DecorationDiv6></DecorationDiv6>
-			</DecorationContainer2>
-		</ServicesContainer>
+				<TitleServices>Services</TitleServices>
+				<ParagraphServices>
+					Functional and aesthetic enhancement of scientific graphics to make
+					your communication more effective. This is achieved when the
+					intentionality of your data is expressed through thoughtful design
+					sensibilities.
+				</ParagraphServices>
+				<DecorationContainer1>
+					{" "}
+					<DecorationDiv1></DecorationDiv1>
+					<DecorationDiv2></DecorationDiv2>
+					<DecorationDiv3></DecorationDiv3>
+				</DecorationContainer1>
+				<DecorationContainer2>
+					{" "}
+					<DecorationDiv4></DecorationDiv4>
+					<DecorationDiv5></DecorationDiv5>
+					<DecorationDiv6></DecorationDiv6>
+				</DecorationContainer2>
+				<AnchorExample ref={ref2}>.</AnchorExample>
+			</ServicesContainer>
+		</>
 	);
 }
 
+const AnchorExample = styled.div`
+	height: 1px solid red;
+	color: var(--background-white);
+`;
 const blueColor = "var(--blueContact-us)";
 
 const DecorationDiv = styled.div`
