@@ -82,6 +82,10 @@ const EmailSection = styled.div`
 	font-family: "Calibri", sans-serif;
 	font-size: 1.4rem;
 	color: var(--grey03);
+
+	@media (max-width: 360px) {
+		font-size: 1.2rem;
+	}
 `;
 
 const LeftSectionContact = styled.div`
@@ -123,7 +127,6 @@ const ContactInfo = styled.div`
 	}
 
 	@media (max-width: 402px) {
-		// margin: 0 rem 0;
 		grid-row-gap: 1.5rem;
 	}
 `;
@@ -160,6 +163,5 @@ const ContactWrapper = styled.div`
 
 	@media (max-width: 402px) {
 		flex-direction: column;
-		// padding: 2rem;
 	}
 `;

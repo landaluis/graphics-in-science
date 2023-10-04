@@ -10,7 +10,7 @@ export default function LearnMoreLink({ href }) {
 					href={href}
 					style={{
 						textDecoration: "none",
-						color: "black",
+						color: "#10212A",
 					}}>
 					Learn More →
 				</Link>

@@ -56,7 +56,7 @@ const InfoLine = styled.div`
 const Label = styled.p`
 	font-size: 1.5rem;
 	font-family: "CormorantGaramond", serif;
-	// font-stretch: condensed;
+
 	line-height: 1.45;
 	text-align: center;
 	margin: 0;

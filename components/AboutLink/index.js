@@ -4,7 +4,13 @@ import styled from "styled-components";
 export default function AboutLink({ handleClick }) {
 	return (
 		<AboutLinkContainer>
-			<About onClick={handleClick}>About</About>
+			<About
+				onClick={handleClick}
+				style={{
+					color: "#10212A",
+				}}>
+				About
+			</About>
 		</AboutLinkContainer>
 	);
 }
@@ -25,9 +31,6 @@ const About = styled.button`
 
 const AboutLinkContainer = styled.div`
 	padding: 8px 10px;
-	// font-family: "Arial", sans-serif;
-	// font-size: 1.1rem;
-
 
 	}
 `;

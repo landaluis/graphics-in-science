@@ -62,10 +62,6 @@ const Text = styled.p`
 	@media (max-width: 1280px) {
 		line-height: 1.2rem;
 	}
-
-	@media (max-width: 820px) {
-		// line-height: 1.2rem;
-	}
 `;
 
 const Title = styled.h3`
@@ -126,7 +122,7 @@ const Card = styled.div`
 	}
 
 	@media (max-width: 402px) {
-		// padding: 1.5rem 1.5rem;
+		padding: 1.2rem 1.1rem;
 	}
 `;
 
