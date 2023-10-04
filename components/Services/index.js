@@ -11,7 +11,7 @@ export default function Services({ ref2 }) {
 					Functional and aesthetic enhancement of scientific graphics to make
 					your communication more effective. This is achieved when the
 					intentionality of your data is expressed through thoughtful design
-					sensibilities.
+					sensibilities<AnchorExample ref={ref2}>.</AnchorExample>
 				</ParagraphServices>
 				<DecorationContainer1>
 					{" "}
@@ -25,16 +25,12 @@ export default function Services({ ref2 }) {
 					<DecorationDiv5></DecorationDiv5>
 					<DecorationDiv6></DecorationDiv6>
 				</DecorationContainer2>
-				<AnchorExample ref={ref2}>.</AnchorExample>
 			</ServicesContainer>
 		</>
 	);
 }
 
-const AnchorExample = styled.div`
-	height: 1px solid red;
-	color: var(--background-white);
-`;
+const AnchorExample = styled.span``;
 const blueColor = "var(--blueContact-us)";
 
 const DecorationDiv = styled.div`
