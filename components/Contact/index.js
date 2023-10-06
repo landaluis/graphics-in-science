@@ -13,7 +13,7 @@ export default function Contact({ ref3 }) {
 					<LeftSectionContact>Contact</LeftSectionContact>
 					<RightSectionContact>
 						<Message>
-							Send me an email, I look forward hearing from you!
+							Send me an email, I look forward to hearing from you!
 						</Message>
 						<EmailSection>andres@graphicsinscience.com</EmailSection>
 						<LinksSection>
