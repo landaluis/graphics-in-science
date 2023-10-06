@@ -18,7 +18,7 @@ export default function PageWrap({ ref1, ref2, ref3, handleWorkTogether }) {
 				<CardExample
 					imageUrl="../TitleExample1.jpg"
 					title="Climate Science"
-					text="Supported the developing of more than 300 figures featured the
+					text="Supported the development of more than 300 figures featured the
 		6th Assesment Report of the Intergovernmental Panel on Climate
 		Change."
 					learnMoreLink="https://www.behance.net/gallery/151953673/My-experience-with-the-IPCC
@@ -28,7 +28,7 @@ export default function PageWrap({ ref1, ref2, ref3, handleWorkTogether }) {
 				<CardExample
 					imageUrl="../TitleExample2.jpg"
 					title="Environmental media"
-					text="I help environmental journalist in designing data-driven graphic products
+					text="I help environmental journalist design data-driven graphic products
 				that can effectively communicate complex information to a general audience
 				who may not be experts in the field."
 					learnMoreLink="https://www.behance.net/gallery/146417585/Maps-for-articles"
