@@ -11,7 +11,7 @@ export default function Services({ ref2 }) {
 					Functional and aesthetic enhancement of scientific graphics to make
 					your communication more effective. This is achieved when the
 					intentionality of your data is expressed through thoughtful design
-					sensibilities<AnchorExample ref={ref2}>.</AnchorExample>
+					sensitivities<AnchorExample ref={ref2}>.</AnchorExample>
 				</ParagraphServices>
 				<DecorationContainer1>
 					{" "}
