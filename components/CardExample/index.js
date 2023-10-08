@@ -4,8 +4,8 @@ import Image from "next/image";
 import LearnMoreLink from "../LearnMoreLink";
 
 export default function CardExample({
-	imageUrl,
-	imageUrl2,
+	image01,
+	image02,
 	title,
 	text,
 	learnMoreLink,
@@ -17,28 +17,36 @@ export default function CardExample({
 				<Card>
 					<CardSectionContainer>
 						<LeftSectionCard>
-							<SectionWrapper>
-								<ImageTitleContainer>
-									{" "}
-									<img
-										src={imageUrl}
-										alt="TitleExample"
-										style={{ width: "60%", height: "auto" }}
-									/>
-								</ImageTitleContainer>
+							<ImageTitleContainer>
+								{" "}
+								<Image
+									src={image01}
+									alt="TitleExample"
+									style={{
+										objectFit: "contain",
+										width: "60%",
+										position: "relative",
+										height: "unset",
+									}}
+								/>
+							</ImageTitleContainer>
 
-								<Title>{title}</Title>
-								<Text>{text}</Text>
-								<LearnMoreLink href={learnMoreLink}>Learn more</LearnMoreLink>
-							</SectionWrapper>
+							<Title>{title}</Title>
+							<Text>{text}</Text>
+							<LearnMoreLink href={learnMoreLink}>Learn more</LearnMoreLink>
 						</LeftSectionCard>
 						<RightSectionCard>
 							<ImageRightContainer>
 								{" "}
-								<img
-									src={imageUrl2}
-									alt="ImageExample"
-									style={{ width: "100%", height: "auto" }}
+								<Image
+									src={image02}
+									alt="Image Example"
+									style={{
+										objectFit: "contain",
+										width: "100%",
+										position: "relative",
+										height: "unset",
+									}}
 								/>
 							</ImageRightContainer>
 						</RightSectionCard>
@@ -52,6 +60,7 @@ export default function CardExample({
 const Text = styled.p`
 	font-family: "Arial", sans-serif;
 	width: 90%;
+
 	font-size: 0.95rem;
 	line-height: 1.3rem;
 	color: var(--grey02);
@@ -112,6 +121,7 @@ const Card = styled.div`
 	color: var(--grey02);
 	padding: 1.5rem 2rem;
 	display: flex;
+	width: 100%;
 
 	@media (max-width: 1024px) {
 		padding: 1.5rem 1.5rem;
@@ -131,6 +141,8 @@ const CardSectionContainer = styled.div`
 	position: relative;
 	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
+	width: 100%;
 
 	@media (max-width: 820px) {
 		flex-direction: column;
@@ -147,6 +159,8 @@ const RightSectionCard = styled.div`
 `;
 
 const ImageTitleContainer = styled.div`
+	position: unset !important;
+	position: relative;
 	margin-bottom: 2rem;
 
 	@media (max-width: 402px) {
@@ -157,10 +171,9 @@ const ImageTitleContainer = styled.div`
 
 const ImageRightContainer = styled.div`
 	width: 25rem;
+	position: unset !important;
 
 	@media (max-width: 820px) {
 		width: 100%;
 	}
 `;
-
-const SectionWrapper = styled.div``;

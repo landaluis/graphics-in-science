@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "../Logo";
 import RightNavBar from "../RightNavBar";
-import BurgerMenu from "../BurgerMenu";
 
 export default function Header({
 	handleClick,
@@ -14,7 +13,6 @@ export default function Header({
 			<NavContainer>
 				<Logo />
 				<NavSectionContainer>
-					{/* <BurgerMenu /> */}
 					<RightNavBar
 						handleClick={handleClick}
 						handleClickExamples={handleClickExamples}
