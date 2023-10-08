@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
-// import Image from "next/image";
+import Image from "next/image";
+import LogoImg from "../../public/LogoImg.jpg";
 
 export default function Logo() {
 	return (
@@ -9,10 +10,16 @@ export default function Logo() {
 			<Link href={"/"}>
 				<LogoContainer>
 					{" "}
-					<img
-						src="../Logo.jpg"
-						alt="Logo"
-						style={{ width: "100%", height: "auto" }}
+					<Image
+						src={LogoImg}
+						alt="GIS Logo"
+						fill={false}
+						style={{
+							objectFit: "contain",
+							width: "100%",
+							position: "relative",
+							height: "unset",
+						}}
 					/>
 				</LogoContainer>
 			</Link>
@@ -21,6 +28,10 @@ export default function Logo() {
 }
 
 const LogoContainer = styled.div`
+	width: 100%;
+	position: unset !important;
+
+	position: relative;
 	width: 151px;
 	height: auto;
 
