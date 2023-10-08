@@ -21,6 +21,11 @@ export default function App({ Component, pageProps }) {
 		<>
 			<GlobalStyle />
 			<Head>
+				<meta
+					name="description"
+					content="Functional and aesthetic enhancement of scientific graphics to make
+					your communication more effective. "
+				/>
 				<title>Graphics in Science</title>
 			</Head>
 			<Component
