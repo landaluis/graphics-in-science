@@ -7,12 +7,14 @@ export default createGlobalStyle`
   src: url('/PlayfairDisplay-Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'PlayfairDisplay';
   src: url('/PlayfairDisplay-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@ export default createGlobalStyle`
   src: url('/CormorantGaramond-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
   *,
