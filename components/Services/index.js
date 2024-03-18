@@ -18,8 +18,8 @@ export default function Services({ handleWorkTogether, ref2 }) {
 
 					<Column>
 						<p>
-							You have the data to explore, a topic to be discussed, a story to
-							be told.
+							You have data to explore, a topic to be discussed, a story to be
+							told.
 						</p>
 					</Column>
 					<Column>
