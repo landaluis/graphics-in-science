@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import LetsWorkLink from "../LetsWorkLink";
-import LinkedInLink from "../LinkedInLink";
 import BehanceLink from "../BehanceLink";
+import TableauLink from "../TableauLink";
 
 export default function IntroParagraph({ handleWorkTogether }) {
 	return (
@@ -24,7 +24,7 @@ export default function IntroParagraph({ handleWorkTogether }) {
 						<LetsWorkLink handleWorkTogether={handleWorkTogether} />
 					</LetsWorkLinkContainer>
 					<LinkedInBehanceContainer>
-						<LinkedInLink color="var(--grey02)" />
+						<TableauLink color="var(--grey02)" />
 						<BehanceLink color="var(--grey02)" />
 					</LinkedInBehanceContainer>
 				</Content>
@@ -53,7 +53,9 @@ const LinkedInBehanceContainer = styled.div`
 `;
 
 const LetsWorkLinkContainer = styled.div`
+	display: flex;
 	margin-top: 3rem;
+	justify-content: flex-start;
 
 	@media (max-width: 890px) {
 		margin-top: 2rem;

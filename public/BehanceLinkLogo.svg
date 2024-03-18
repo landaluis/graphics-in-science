@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90.3 25">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #3c4a51;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        font-family: ArialMT, Arial;
+        font-size: 14.4px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" width="25" height="25"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g class="cls-4">
+        <path class="cls-1" d="M20.12,13.7c0-2.01-1.18-3.68-3.3-3.68s-3.47,1.55-3.47,3.59,1.33,3.57,3.47,3.57c1.62,0,2.67-.73,3.18-2.29h-1.65c-.18.58-.91.88-1.47.88-1.09,0-1.67-.64-1.67-1.72h4.89c0-.11.01-.24.01-.35ZM12.73,14.42c0-1.18-.56-2.19-1.71-2.52.84-.4,1.28-.86,1.28-1.81,0-1.86-1.39-2.32-3-2.32h-4.42v9.38h4.55c1.7,0,3.3-.82,3.3-2.73ZM14.83,9.03h3.8v-.92h-3.8v.92ZM23.44,3.91v17.19c0,1.29-1.05,2.34-2.34,2.34H3.91c-1.29,0-2.34-1.05-2.34-2.34V3.91c0-1.29,1.05-2.34,2.34-2.34h17.19c1.29,0,2.34,1.05,2.34,2.34ZM16.75,11.42c-.89,0-1.49.56-1.55,1.45h3.04c-.08-.9-.55-1.45-1.49-1.45ZM10.29,10.29c0-.86-.67-1.07-1.41-1.07h-1.93v2.19h2.09c.74,0,1.26-.32,1.26-1.12ZM10.67,14.31c0,.94-.68,1.24-1.52,1.24h-2.2v-2.58h2.25c.91,0,1.48.38,1.48,1.34Z"/>
+      </g>
+      <text class="cls-2" transform="translate(33.45 18)"><tspan x="0" y="0">Behance</tspan></text>
+    </g>
+  </g>
+</svg>

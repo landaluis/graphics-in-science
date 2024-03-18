@@ -17,6 +17,7 @@
 		"react-dom": "18.2.0",
 		"react-icons": "^4.11.0",
 		"react-scroll": "^1.8.9",
+		"react-svg": "^16.1.33",
 		"styled-components": "^5.3.8",
 		"three": "^0.156.1"
 	},

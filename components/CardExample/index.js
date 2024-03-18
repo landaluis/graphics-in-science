@@ -20,8 +20,8 @@ export default function CardExample({
 							<ImageTitleContainer>
 								{" "}
 								<Image
-									src={image01}
-									alt="TitleExample"
+									src={image01 || ""}
+									alt={image01 ? "TitleExample" : ""}
 									style={{
 										objectFit: "contain",
 										width: "60%",

@@ -1,20 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
-import BehanceLinkLogo from "../../public/BehanceLinkLogo.svg";
 import Image from "next/image";
+import TableauLinkLogo from "../../public/TableauLinkLogo.svg";
 
-export default function BehanceLink({ color }) {
+export default function TableauLink({ color }) {
 	return (
 		<>
 			<LinkContainer>
 				<StyledLink
-					href={"https://www.behance.net/andres-alegria"}
+					href={"https://public.tableau.com/app/profile/andres.alegria/vizzes"}
 					style={{
 						textDecoration: "none",
 						color: color,
 					}}>
-					<Image src={BehanceLinkLogo} alt="BehanceLink" />
+					<Image src={TableauLinkLogo} alt="TableauLink" />
 				</StyledLink>
 			</LinkContainer>
 		</>
