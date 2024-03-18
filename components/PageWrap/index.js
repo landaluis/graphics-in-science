@@ -12,9 +12,9 @@ export default function PageWrap({ ref1, ref2, ref3, handleWorkTogether }) {
 			<PageWrapContainer>
 				<SeparationDiv></SeparationDiv>
 
-				<IntroParagraphGlobeSection handleWorkTogether={handleWorkTogether} />
+				{/* <IntroParagraphGlobeSection handleWorkTogether={handleWorkTogether} /> */}
 
-				<Services ref2={ref2} />
+				<Services ref2={ref2} handleWorkTogether={handleWorkTogether} />
 
 				<CardExamples ref1={ref1} />
 

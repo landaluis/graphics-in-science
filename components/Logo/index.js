@@ -7,10 +7,11 @@ import LogoImg from "../../public/LogoImg.jpg";
 export default function Logo() {
 	return (
 		<>
-			<Link href={"/"}>
+			<Link href={"/"} style={{ textDecoration: "none", color: "black" }}>
 				<LogoContainer>
 					{" "}
-					<Image
+					GRAPHICS in SCIENCE
+					{/* <Image
 						src={LogoImg}
 						alt="GIS Logo"
 						fill={false}
@@ -20,7 +21,7 @@ export default function Logo() {
 							position: "relative",
 							height: "unset",
 						}}
-					/>
+					/> */}
 				</LogoContainer>
 			</Link>
 		</>
@@ -30,16 +31,17 @@ export default function Logo() {
 const LogoContainer = styled.div`
 	width: 100%;
 	position: unset !important;
+	font-family: "PlayfairDisplay-Bold", serif;
 
 	position: relative;
-	width: 151px;
+	// width: 151px;
 	height: auto;
 
 	@media (max-width: 768px) {
-		width: 120px;
+		// width: 120px;
 	}
 
 	@media (max-width: 402px) {
-		width: 100px;
+		// width: 100px;
 	}
 `;
