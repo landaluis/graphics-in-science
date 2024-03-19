@@ -37,7 +37,7 @@ export default function CardExamples({ ref1 }) {
 			<CardExample
 				image01=""
 				title="Interactive Geodata in 3d"
-				text="Explore data, combine layers, zoom, and rotate to find the right angle from where to sell your story using."
+				text="Explore data, combine layers, zoom, and rotate to find the right angle from where to tell your story using."
 				learnMoreLink="https://honduras.pubpub.org/pub/g3lmyjjm/release/2"
 				image02={ImageExample6}
 			/>
