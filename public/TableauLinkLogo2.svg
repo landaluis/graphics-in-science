@@ -24,8 +24,8 @@
       }
 
       .cls-4 {
-        fill: #efeeec;
-        <!-- fill: #25363d; -->
+
+        fill: #25363d;
        
       }
     </style>

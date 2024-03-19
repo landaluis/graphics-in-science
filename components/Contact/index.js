@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import LinkedInLink from "../LinkedInLink";
+import TableauLink2 from "../TableauLink2";
 import BehanceLink from "../BehanceLink";
 
 export default function Contact({ ref3 }) {
@@ -17,8 +17,9 @@ export default function Contact({ ref3 }) {
 						</Message>
 						<EmailSection>andres@graphicsinscience.com</EmailSection>
 						<LinksSection>
-							<LinkedInLink color="var(--grey03)" />
-							<BehanceLink color="var(--grey03)" />
+							<TableauLink2 />
+
+							<BehanceLink />
 						</LinksSection>
 					</RightSectionContact>
 				</ContactInfo>
