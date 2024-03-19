@@ -219,7 +219,7 @@ const TitleServices = styled.h2`
 	}
 `;
 
-const ParagraphServices = styled.p`
+const ParagraphServices = styled.div`
 	font-family: "Arial", sans-serif;
 	line-height: 1.8rem;
 	display: flex;
