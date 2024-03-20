@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import LearnMoreLink from "../LearnMoreLink";
+import AtlasLink from "../AtlasLink";
 
 export default function CardExample({
 	image01,
@@ -9,6 +10,7 @@ export default function CardExample({
 	title,
 	text,
 	learnMoreLink,
+	atlasLink,
 	ref2,
 }) {
 	return (
@@ -30,10 +32,12 @@ export default function CardExample({
 									}}
 								/>
 							</ImageTitleContainer>
-
 							<Title>{title}</Title>
 							<Text>{text}</Text>
 							<LearnMoreLink href={learnMoreLink}>Learn more</LearnMoreLink>
+							{atlasLink && (
+								<AtlasLink href={atlasLink}>Formato Interactivo 3D</AtlasLink>
+							)}
 						</LeftSectionCard>
 						<RightSectionCard>
 							<ImageRightContainer>

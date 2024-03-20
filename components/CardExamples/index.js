@@ -11,6 +11,7 @@ import TitleExample4 from "../../public/TitleExample4.jpg";
 import ImageExample4 from "../../public/ImageExample4.jpg";
 import ImageExample5 from "../../public/ImageExample5.png";
 import ImageExample6 from "../../public/ImageExample6.png";
+import Link from "next/link";
 
 export default function CardExamples({ ref1 }) {
 	return (
@@ -23,6 +24,7 @@ export default function CardExamples({ ref1 }) {
 		Change."
 				learnMoreLink="https://www.behance.net/gallery/151953673/My-experience-with-the-IPCC
 					"
+				atlasLink={""}
 				image02={ImageExample1}
 			/>
 			<CardExample
@@ -32,6 +34,7 @@ export default function CardExamples({ ref1 }) {
 				that can effectively communicate complex information to a general audience
 				who may not be experts in the field."
 				learnMoreLink="https://www.behance.net/gallery/146417585/Maps-for-articles"
+				atlasLink={""}
 				image02={ImageExample2}
 			/>
 			<CardExample
@@ -39,13 +42,16 @@ export default function CardExamples({ ref1 }) {
 				title="Interactive Geodata in 3d"
 				text="Explore data, combine layers, zoom, and rotate to find the right angle from where to tell your story using."
 				learnMoreLink="https://honduras.pubpub.org/pub/g3lmyjjm/release/2"
+				atlasLink={"Atlas_prototype/Atlas.html"}
 				image02={ImageExample6}
 			/>
+
 			<CardExample
 				image01={TitleExample3}
 				title="Interactive dashboards"
 				text="I create interactive visualizations for scientist and wider audiences."
 				learnMoreLink="https://public.tableau.com/app/profile/andres.alegria/vizzes"
+				atlasLink={""}
 				image02={ImageExample5}
 			/>
 			<CardExample
@@ -55,6 +61,7 @@ export default function CardExamples({ ref1 }) {
 				communication compaigns targeting a wide array of stakeholders demanding diverse media
 				outputs."
 				learnMoreLink="https://www.behance.net/gallery/38040031/Fishermens-Magazine-3"
+				atlasLink={""}
 				image02={ImageExample4}
 			/>
 
