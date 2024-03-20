@@ -12,7 +12,7 @@ export default function AtlasLink({ href }) {
 						textDecoration: "none",
 						color: "#10212A",
 					}}>
-					Formato interactivo 3D
+					Interactive 3D format
 				</Link>
 			</AtlasLinkContainer>
 		</>
